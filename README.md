@@ -1,8 +1,8 @@
-# 📦 Sruwan Inventory
+# 📦 GearVault
 
 > **A modern MERN-stack Inventory Management System for rental businesses.**
 
-Sruwan Inventory is a **MERN stack Inventory Management System** designed for rental businesses that manage products such as **cameras, speakers, lighting equipment, and other rental items**.
+GearVault is a **MERN stack Inventory Management System** designed for rental businesses that manage products such as **cameras, speakers, lighting equipment, and other rental items**.
 
 The system supports **hourly, half-day, and full-day pricing**, product and category management, stock tracking, administrative reports, role-based access control, and an **AI-powered inventory assistant** using Google Gemini.
 
@@ -159,7 +159,7 @@ jspdf-autotable
 
 # 🤖 AI Chat Assistant
 
-Sruwan Inventory includes an **AI-powered Chat Assistant** using the **Google Gemini API**.
+GearVault includes an **AI-powered Chat Assistant** using the **Google Gemini API**.
 
 The assistant allows administrators to ask questions about inventory using natural language.
 
@@ -377,8 +377,8 @@ You will also need:
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/SandaruwanChandrasena/Inventory-Management-System_Rewamping.git
-cd Inventory-Management-System_Rewamping
+git clone https://github.com/Sukhman3125/GearVault.git
+cd GearVault
 ```
 
 ---
@@ -444,6 +444,6 @@ baseURL: "http://localhost:5000/api"
 ---
 
 <p align="center">
-  <strong>📦 Sruwan Inventory</strong><br>
+  <strong>📦 GearVault</strong><br>
   MERN Stack Inventory Management System
 </p>

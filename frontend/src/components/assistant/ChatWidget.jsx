@@ -94,7 +94,7 @@ const ChatWidget = () => {
           <div className="flex items-center justify-between border-b border-border bg-gradient-to-r from-primary-700 to-primary-600 px-5 py-4">
             <div className="flex items-center gap-2">
               <SparklesIcon className="h-5 w-5 text-white" />
-              <h3 className="font-semibold text-white">Sruwan Assistant</h3>
+              <h3 className="font-semibold text-white">GearVault Assistant</h3>
             </div>
 
             <button
@@ -179,7 +179,7 @@ const ChatWidget = () => {
       <button
         type="button"
         onClick={handleToggle}
-        title="Sruwan Assistant"
+        title="GearVault Assistant"
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary-600 text-white shadow-lg shadow-primary-600/30 transition hover:bg-primary-700 hover:shadow-xl"
       >
         {isOpen ? (

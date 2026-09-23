@@ -2,7 +2,7 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import logo from "../assets/logo.png";
 
-// Colors pulled from the Sruwan Inventory logo
+// Colors pulled from the GearVault logo
 const NAVY = [21, 58, 111];
 const ORANGE = [245, 130, 31];
 
@@ -39,7 +39,7 @@ const drawHeader = async (doc, { reportTitle, generatedBy, subtitle }) => {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(16);
   doc.setTextColor(...NAVY);
-  doc.text("Sruwan Inventory", 90, 45);
+  doc.text("GearVault", 90, 45);
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);

@@ -36,7 +36,7 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Inventory Management System API is running",
+    message: "GearVault API is running",
   });
 });
 

@@ -46,9 +46,9 @@ const ForgotPassword = () => {
 
         <div className="relative flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-lg font-bold text-white backdrop-blur">
-            IM
+            GV
           </div>
-          <span className="text-lg font-semibold text-white">Inventory MS</span>
+          <span className="text-lg font-semibold text-white">GearVault</span>
         </div>
 
         <div className="relative">
@@ -65,7 +65,7 @@ const ForgotPassword = () => {
         </div>
 
         <p className="relative text-sm text-white/50">
-          © {new Date().getFullYear()} Inventory Management System
+          © {new Date().getFullYear()} GearVault
         </p>
       </div>
 
@@ -74,10 +74,10 @@ const ForgotPassword = () => {
         <div className="w-full max-w-sm">
           <div className="mb-8 text-center lg:hidden">
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary-600 text-xl font-bold text-white shadow-lg shadow-primary-600/20">
-              IM
+              GV
             </div>
             <h1 className="text-xl font-bold text-text-primary">
-              Inventory Management System
+              GearVault
             </h1>
           </div>
 

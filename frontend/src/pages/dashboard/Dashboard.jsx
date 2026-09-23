@@ -179,7 +179,7 @@ const Dashboard = () => {
             Welcome back, {currentUser?.firstName}
           </h1>
           <p className="mt-2 max-w-lg text-sm text-white/70">
-            {/* Here's what's happening across Sruwan Inventory today. */}
+            {/* Here's what's happening across GearVault today. */}
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">

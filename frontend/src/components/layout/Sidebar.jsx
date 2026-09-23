@@ -104,11 +104,11 @@ const Sidebar = () => {
       <div className="flex h-16 items-center gap-3 border-b border-white/10 px-6">
         <img
           src={logo}
-          alt="Sruwan Inventory"
+          alt="GearVault"
           className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10"
         />
         <div>
-          <h2 className="text-sm font-bold leading-tight">Sruwan</h2>
+          <h2 className="text-sm font-bold leading-tight">GearVault</h2>
           <p className="text-xs leading-tight text-slate-500">Inventory</p>
         </div>
       </div>

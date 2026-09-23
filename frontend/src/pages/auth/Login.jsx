@@ -87,11 +87,11 @@ const Login = () => {
         <div className="relative flex items-center gap-3">
           <img
             src={logo}
-            alt="Sruwan Inventory"
+            alt="GearVault"
             className="h-10 w-10 rounded-lg object-cover"
           />
           <span className="text-lg font-semibold text-white">
-            Sruwan Inventory
+            GearVault
           </span>
         </div>
 
@@ -111,7 +111,7 @@ const Login = () => {
 
         {/* Bottom footer */}
         <p className="relative text-sm text-white/60">
-          © {new Date().getFullYear()} Sruwan Inventory
+          © {new Date().getFullYear()} GearVault
         </p>
       </div>
 
@@ -122,11 +122,11 @@ const Login = () => {
           <div className="mb-8 text-center lg:hidden">
             <img
               src={logo}
-              alt="Sruwan Inventory"
+              alt="GearVault"
               className="mx-auto mb-4 h-14 w-14 rounded-xl object-cover shadow-lg shadow-primary-600/20"
             />
             <h1 className="text-xl font-bold text-text-primary">
-              Sruwan Inventory
+              GearVault
             </h1>
           </div>
 
@@ -233,7 +233,7 @@ const Login = () => {
 
           {/* Footer (mobile only, since left panel already has one) */}
           <p className="mt-8 text-center text-xs text-text-secondary lg:hidden">
-            Sruwan Inventory
+            GearVault
           </p>
         </div>
       </div>
