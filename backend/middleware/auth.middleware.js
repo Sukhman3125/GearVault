@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import config from "../config/config.js";
 import User from "../modules/auth/auth.model.js";
 
 const requireAuth = async (req, res, next) => {
@@ -12,7 +13,7 @@ const requireAuth = async (req, res, next) => {
       });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, config.jwtSecret);
 
     const user = await User.findById(decoded.id);
 

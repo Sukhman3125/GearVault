@@ -6,6 +6,7 @@ import Profile from "./profile.model.js";
 import calculateAge from "../../utils/calculateAge.js";
 import supabase from "../../config/supabase.js";
 import sendEmail from "../../utils/email.js";
+import config from "../../config/config.js";
 
 /* Create a new user - A/ M */
 const createUser = async ({
@@ -87,7 +88,7 @@ const loginUser = async (email, password) => {
       role: user.role,
       tokenVersion: user.tokenVersion,
     },
-    process.env.JWT_SECRET,
+    config.jwtSecret,
     {
       expiresIn: "1d",
     },
@@ -114,7 +115,7 @@ const forgotPassword = async (email) => {
 
   await user.save();
 
-  const resetLink = `${process.env.CLIENT_URL}/reset-password/${resetToken}`;
+  const resetLink = `${config.clientUrl}/reset-password/${resetToken}`;
 
   await sendEmail({
     to: user.email,

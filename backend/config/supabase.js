@@ -1,9 +1,9 @@
-import "dotenv/config";
 import { createClient } from "@supabase/supabase-js";
+import config from "./config.js";
 
 const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SECRET_KEY,
+  config.supabaseUrl,
+  config.supabaseSecretKey,
   {
     auth: {
       autoRefreshToken: false,

@@ -1,9 +1,10 @@
 import { GoogleGenAI, Type } from "@google/genai";
+import config from "../../config/config.js";
 import productService from "../products/product.service.js";
 import stockService from "../stock/stock.service.js";
 import { getAllCategories } from "../products/category.service.js";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: config.geminiApiKey });
 
 const MODEL = "gemini-3.6-flash";
 

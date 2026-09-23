@@ -1,22 +1,18 @@
 import nodemailer from "nodemailer";
+import config from "../config/config.js";
 
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
+  host: config.email.host,
+  port: config.email.port,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: config.email.user,
+    pass: config.email.pass,
   },
 });
 
-console.log("EMAIL_HOST:", process.env.EMAIL_HOST);
-console.log("EMAIL_PORT:", process.env.EMAIL_PORT);
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS length:", process.env.EMAIL_PASS?.length);
-
 const sendEmail = async ({ to, subject, html }) => {
   await transporter.sendMail({
-    from: process.env.EMAIL_USER,
+    from: config.email.user,
     to,
     subject,
     html,

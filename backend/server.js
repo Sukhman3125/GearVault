@@ -1,11 +1,9 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import morgan from "morgan";
+import config from "./config/config.js";
 import connectDB from "./config/db.js";
 import moduleRoutes from "./modules/index.js";
 
@@ -20,7 +18,7 @@ app.use(morgan("dev"));
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: config.clientUrl,
     credentials: true,
   }),
 );
@@ -44,7 +42,7 @@ app.get("/", (req, res) => {
 app.use("/api", moduleRoutes);
 
 // Server
-const PORT = process.env.PORT || 5000;
+const PORT = config.port;
 
 connectDB().then(() => {
   app.listen(PORT, () => {
